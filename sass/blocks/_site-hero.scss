@@ -1,0 +1,140 @@
+.site-main__hero {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #014E56;
+}
+.hero__inner {
+    position: relative;
+    margin: 0;
+    padding: 133px 65px 250px 65px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.hero__title {
+    margin: 0;
+    max-width: 535px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+
+span {
+    color: #F67E7E;
+}
+
+.hero__text {
+    margin: 0;
+    max-width:445px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.hero::before {
+    position:absolute;
+    width: 100px;
+    height: 200px;
+    z-index: 1;
+    background-image: url(../../img/befor-1.png);
+    background-repeat: no-repeat;
+    top: 126px;
+    left: calc(50% 1px);
+    background-size: 100px 200px;
+    content: "";
+}
+.hero::after {
+    position: absolute;
+    bottom: 0;
+    top: 483px;
+    left: calc(50% + 132px);
+    width: 358px;
+    height: 100px;
+    z-index: 1;
+    background-image: url(../../img/after.png);
+    background-repeat: no-repeat;
+    background-position:calc(50% -100px);
+    content: "";
+
+}
+
+.hero__inner::before {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    left: 600px;
+    top: 141px;
+    background-image: url(../../img/Rectangle2.png);
+    background-repeat: no-repeat;
+    
+    content: "";
+}
+
+@media only screen and (max-width:1120px){
+    .hero__inner {
+        flex-direction: column;
+    }
+    .hero__title {
+        margin-bottom: 40px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero__text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero::after {
+        top: auto;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .hero__inner::before {
+        display: none;
+    }
+  
+}
+@media only screen and (max-width:768px){
+    .hero__title  {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 56px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero__text {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .hero::after {
+        top: auto;
+    }
+    .hero::before {
+        display: none;
+    }
+    // .site-header__photo {
+    //     w
+    // }
+    
+
+}
+@media only screen and (max-width:700px){
+    .hero__title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+// @media only screen and (max-width:576px;){
+
+// }
