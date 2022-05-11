@@ -39,7 +39,7 @@ span {
     width: 100px;
     height: 200px;
     z-index: 1;
-    background-image: url(../../img/befor-1.png);
+    background-image: url(../img/befor-1.png);
     background-repeat: no-repeat;
     top: 126px;
     left: calc(50% 1px);
@@ -54,7 +54,7 @@ span {
     width: 358px;
     height: 100px;
     z-index: 1;
-    background-image: url(../../img/after.png);
+    background-image: url(../img/after.png);
     background-repeat: no-repeat;
     background-position:calc(50% -100px);
     content: "";
@@ -68,7 +68,7 @@ span {
     position: absolute;
     left: 600px;
     top: 141px;
-    background-image: url(../../img/Rectangle2.png);
+    background-image: url(../img/Rectangle2.png);
     background-repeat: no-repeat;
     
     content: "";
